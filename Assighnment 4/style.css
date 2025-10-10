@@ -1,0 +1,46 @@
+.heading{
+    text-align: center;
+}
+.table-head{
+   display: flex;
+   justify-content: center;
+
+}
+.orange{
+    background-color: orange;
+}
+.purple{
+    background-color: purple;
+}
+.green{
+    background-color: green;
+}
+.red{
+    background-color: red;
+}
+.black{
+    background-color: black;
+    color: white;
+}
+.blue{
+    background-color: blue;
+    
+}
+.pink{
+    background-color: pink;
+}
+.yellow{
+    background-color: yellow;
+}
+.grey{
+    background-color: grey;
+}  
+.half-white{
+    background-color: #f2f2f2;
+}
+.orange-green{
+    background-color: #FFA5007D;
+}
+.white{
+    background-color: white;
+}
