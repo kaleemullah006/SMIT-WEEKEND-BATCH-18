@@ -1,0 +1,183 @@
+*{
+    /* margin-left: 35px; */
+    
+.box1{
+    width: 200px;
+    height: 200px;
+    /* background-color: black; */
+    border-left:2px solid black ;
+    margin-left: 100px;
+
+}
+.box2{
+    width: 200px;
+    height: 200px;
+    /* background-color: black; */
+    /* border-left:2px solid black ; */
+    border-right: 2px solid black ;
+    border-top: 2px solid black    ;
+    border-bottom: 2px solid black ;
+    margin-left: 15px;
+
+}
+.box3{
+    width: 200px;
+    height: 200px;
+    border-left:2px solid black ;
+    /* border-right: 2px solid black ; */
+    /* border-top: 2px solid black    ; */
+    border-bottom: 2px solid black ;
+    margin-left: 15px;
+
+}
+.box4{
+    width: 200px;
+    height: 200px;
+    border-right: 2px solid black ;
+    border-top: 2px solid black    ;
+    border-bottom: 2px solid black ;
+    margin-left: 15px;
+
+}
+.box5{
+    width: 200px;
+    height: 200px;
+    /* border-left:2px solid black ; */
+    border-right: 2px solid black ;
+    /* border-top: 2px solid black    ; */
+    border-bottom: 2px solid black ;
+    margin-left: 15px;
+
+}
+.box6{
+    width: 200px;
+    height: 200px;
+    border-left:2px solid black ;
+    border-right: 2px solid black ;
+    /* border-top: 2px solid black    ; */
+    border-bottom: 2px solid black ;
+    margin-left: 15px;
+
+}
+.box7{
+    width: 200px;
+    height: 200px;
+    border-right: 2px solid black ;
+    border-left:2px solid white ;
+    /* border-top: 2px solid black    ; */
+    /* border-bottom: 2px solid black ; */
+    margin-left: 15px;
+
+}
+.box8{
+    width: 200px;
+    height: 200px;
+    border-left:2px solid black ;
+    /* border-right: 2px solid black ; */
+    border-top: 2px solid black    ;
+    border-bottom: 2px solid black ;
+    margin-left: 15px;
+
+}
+.box9{
+    width: 200px;
+    height: 200px;
+    border-right: 2px solid black ;
+    /* border-left:2px solid black ; */
+    /* border-top: 2px solid black    ; */
+    border-bottom: 2px solid black ;
+    margin-left: 15px;
+
+}
+.box10{
+    width: 200px;
+    height: 200px;
+    border-left:2px solid black ;
+    /* border-right: 2px solid black ; */
+    border-top: 2px solid black    ;
+    /* border-bottom: 2px solid black ; */
+    margin-left: 15px;
+
+}
+.box11{
+    width: 200px;
+    height: 200px;
+    border-right: 2px solid black ;
+    border-top: 2px solid black    ;
+    border-left:2px solid black ;
+    border-bottom: 2px solid black ;
+    margin-left: 15px;
+
+}
+.box12{
+    width: 200px;
+    height: 250px;
+    /* border-left:2px solid black ; */
+    border-right: 2px solid black ;
+    border-top: 2px solid black    ;
+    /* border-bottom: 2px solid black ; */
+    margin-left: 15px;
+
+}
+.box13{
+    width: 200px;
+    height: 200px;
+    border-left:2px solid black ;
+    border-right: 2px solid black ;
+    border-top: 2px solid black    ;
+    /* border-bottom: 2px solid black ; */
+    margin-left: 15px;
+
+}
+.box14{
+    width: 200px;
+    height: 200px;
+    border-right: 2px solid black ;
+    border-left:2px solid black ;
+    border-top: 2px solid black    ;
+    border-bottom: 2px solid black ;
+    margin-left: 15px;
+
+}
+.box15{
+    width: 200px;
+    height: 200px;
+    border-left:2px solid black ;
+    border-right: 2px solid black ;
+    border-top: 2px solid black    ;
+    /* border-bottom: 2px solid black ; */
+    margin-left: 15px;
+
+}
+.box16{
+    width: 200px;
+    height: 200px;
+    border-right: 2px solid black ;
+    border-left:2px solid white ;
+    border-top: 2px solid black    ;
+    border-bottom: 2px solid black ;
+    margin-left: 15px;
+
+}
+.box17{
+    width: 200px;
+    height: 200px;
+    border-left:2px solid black ;
+    /* border-right: 2px solid black ; */
+    /* border-top: 2px solid black    ; */
+    /* border-bottom: 2px solid black ; */
+    margin-left: 25px;
+    display: inline-block;
+
+}
+.box18{
+    width: 200px;
+    height: 200px;
+    border-right: 2px solid black ;
+    border-left:2px solid black ;
+    border-top: 2px solid black    ;
+    border-bottom: 2px solid black ;
+    margin-left: 15px;
+    display: inline-block;
+
+}
