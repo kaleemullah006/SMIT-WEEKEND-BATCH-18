@@ -1,0 +1,22 @@
+h1{
+    text-align: center;
+}
+.l-box{
+    width: 600px;
+    height: 600px;
+    background-color: red;
+    border-radius: 50%;
+    border: 2px solid black;
+    position: relative;
+    margin:20px auto; 
+}
+.s-box{
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    border-radius: 50%;
+    border: 2px solid black;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
