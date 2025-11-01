@@ -1,0 +1,49 @@
+.input{
+    display: inline-block;
+}
+/* .label{
+    display: inline-block;
+} */
+.input:active{
+    border-radius: 5px;
+    background-color: lightgreen;
+
+  
+}
+.input:hover{
+    border-radius: 5px;
+    background-color: rgb(112, 110, 122);
+
+  
+}
+.botton{
+    background-color: lightblue;
+    cursor: pointer;
+    color: chocolate;
+    font-size: 20px;    
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+    top: 20px;
+
+}
+div>label{
+   position: relative;
+    top: 20px; 
+} 
+.botton:hover{
+    background-color: lightgreen;
+    color: brown;
+}
+.botton:active{
+    background-color: lightcoral;
+    color: black;
+}
+div .input{
+    position: relative;
+    top: 20px; 
+}
+div.rad{
+    position: relative;
+    top: 20px;
+}
