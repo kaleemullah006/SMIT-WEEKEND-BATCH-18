@@ -278,7 +278,7 @@ div.arrow {
     width: 55px;
     position: relative;
     right: 65px;
-    /* bottom: 5px; */
+    
 }
 
 .arrow>img{
@@ -286,4 +286,117 @@ div.arrow {
     top: 15px;
     left: 15px;
     background-color: #f29d13;
+}
+
+/* ========================================================= */
+/* 📱 RESPONSIVE DESIGN SECTION */
+/* ========================================================= */
+
+/* -------- Tablets & small laptops (max-width: 1024px) -------- */
+@media (max-width: 1024px) {
+  .header {
+    height: auto;
+  }
+
+  .box1 {
+    width: 220px;
+    font-size: 12px;
+  }
+
+  .contact {
+    left: auto;
+    right: 10px;
+    width: 150px;
+  }
+
+  .navbar li {
+    font-size: 16px;
+    margin: 5px;
+  }
+
+  .btnl,
+  .btnr {
+    width: 40px;
+    height: 60px;
+  }
+}
+
+/* -------- Mobile landscape (max-width: 768px) -------- */
+@media (max-width: 768px) {
+  .box1 {
+    position: static;
+    margin: 10px auto;
+  }
+
+  .contact {
+    position: static;
+    margin: 10px auto;
+  }
+
+  .logo2 {
+    width: 100px;
+  }
+
+  .btnl,
+  .btnr {
+    display: none; /* buttons hide on small screens */
+  }
+
+  .navbar ul {
+    flex-direction: column;
+  }
+
+  .navbar li {
+    font-size: 16px;
+    padding: 8px;
+  }
+
+  .search {
+    flex-direction: column;
+    margin: 20px 10px;
+  }
+
+  .input {
+    width: 95%;
+    border-radius: 25px;
+  }
+
+  .arrow {
+    right: 0;
+    margin-top: 10px;
+  }
+}
+
+/* -------- Small mobile (max-width: 480px) -------- */
+@media (max-width: 480px) {
+  .logo2 {
+    width: 80px;
+  }
+
+  .box1,
+  .contact {
+    width: 90%;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar li {
+    font-size: 14px;
+    padding: 6px;
+  }
+
+  .input {
+    height: 45px;
+    font-size: 14px;
+  }
+
+  .arrow {
+    width: 45px;
+    height: 45px;
+  }
+
+  .arrow > img {
+    width: 20px;
+    height: 20px;
+  }
 }
