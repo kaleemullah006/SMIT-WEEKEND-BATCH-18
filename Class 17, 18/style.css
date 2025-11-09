@@ -1,0 +1,23 @@
+
+
+
+
+.h1{
+    animation-name: colorchange;
+    animation-duration: 4s;  
+    animation-delay: ;   
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+
+
+@keyframe colorchange {
+    form  {
+        background-color: #ff9999;
+    }
+    to {
+        background-color: #99ccff;
+    }
+
+}      
