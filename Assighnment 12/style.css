@@ -1,0 +1,35 @@
+
+.animation{
+       width: 100px;
+    height: 100px;
+    background-color: red;
+    border: 2px solid black;
+    margin-top: 30px;
+    border-bottom-left-radius: 55px;
+    border-bottom-right-radius: 55px;
+    border-top-left-radius: 55px;
+    border-top-right-radius: 55px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: movement;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    /* animation-direction: alternate; */
+    
+
+}
+@keyframes movement {
+    from{
+        transform: translateX(0px);
+        background-color: red;
+    }
+    to{
+        transform: translateX(700px);
+        background-color: rgb(16, 237, 212);
+        font-size: bold;
+    }
+    
+}

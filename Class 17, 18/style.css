@@ -5,7 +5,7 @@
 .h1{
     animation-name: colorchange;
     animation-duration: 4s;  
-    animation-delay: ;   
+    animation-delay: 4;   
     animation-iteration-count: infinite;
     animation-direction: alternate;
 
