@@ -301,12 +301,14 @@ div.arrow {
   .box1 {
     width: 220px;
     font-size: 12px;
+    height: 50px;
   }
 
   .contact {
     left: auto;
     right: 10px;
     width: 150px;
+    height: 50px;
   }
 
   .navbar li {
@@ -335,6 +337,7 @@ div.arrow {
 
   .logo2 {
     width: 100px;
+    margin-top: 125px;
   }
 
   .btnl,
@@ -371,6 +374,7 @@ div.arrow {
 @media (max-width: 480px) {
   .logo2 {
     width: 80px;
+    margin-top: 240px;
   }
 
   .box1,
@@ -378,6 +382,10 @@ div.arrow {
     width: 90%;
     flex-direction: column;
     text-align: center;
+    height: 100px;
+  }
+  .navbar > ul{
+    display: flex;
   }
 
   .navbar li {

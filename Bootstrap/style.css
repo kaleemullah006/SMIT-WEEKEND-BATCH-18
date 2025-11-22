@@ -1,0 +1,9 @@
+
+
+
+@media (max-width: 576px) {
+    .container {
+        background: red;
+        font-size: 34px;
+    }
+}

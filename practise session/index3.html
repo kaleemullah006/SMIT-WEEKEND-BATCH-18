@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            display: flex;
+            width: 100vw;
+            /* border: 2px solid black; */
+            border-radius: 5px;
+
+        }
+        .box1{
+            flex: 1.5;
+            background-color: rgb(88, 72, 72);
+            height: 40px;
+        }
+        .box2{
+            flex: 3;
+            background-color: rgb(64, 55, 55);
+            height: 40px;
+
+        }
+        .box2 ul {
+            display: flex;
+            justify-content: center;
+            text-decoration: none;
+            padding-left: 30px;
+            align-items: center;
+            
+        }
+      .box > ul >li{
+            /* margin: auto; */
+            /* align-self: auto; */
+            list-style-type: none;
+            padding-left: 30px;
+            margin-top: 10px;
+            background-color: black;
+             
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1"></div>
+        <div class="box box2">
+            <ul>
+                <li>Home</li>
+                <li>Home</li>
+                <li>Home</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
