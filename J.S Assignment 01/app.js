@@ -15,3 +15,5 @@ var multiply = 5 * bo2 ;
    var result = divide * 4 - innerbracket + 49 ;
 
    console.log ("the final result is " + result )
+
+
