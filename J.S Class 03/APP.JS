@@ -7,21 +7,22 @@
 
 
 
-nepior/lepior ka sal hai ya nhi assighnement
-||
+// nepior/lepior ka sal hai ya nhi assighnement
+// ||
 
-non premitive main var ko call krne se value nhi aygi
-balke location dega
+// non premitive main var ko call krne se value nhi aygi
+// balke location dega
 
-anti gravity k bare main dekhna hai
+// anti gravity k bare main dekhna hai
 
-assighnment 
-promt main 10 family k name lena hai or array main save karna hai
+// assighnment 
+// promt main 10 family k name lena hai or array main save karna hai
 
-example :
-array familymembers = [""]
+// example :
+
+let familyMembers = [""]
 
 let user1 = prompt("enter your 1 family member")
-user1.push(khan)
+user1.push()
 
-ye assignment hai
+// ye assignment hai
