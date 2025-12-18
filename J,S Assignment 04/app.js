@@ -15,5 +15,5 @@
 
 let num = prompt("Enter a number to show its multiplication table");
 for (let i = 1; i <= 10; i++){
-    document.write(i +"x"+ num + "="+(num*i)+"<br>")
+    document.write(i +" x "+ num + " = "+(num*i)+"<br>")
 }
