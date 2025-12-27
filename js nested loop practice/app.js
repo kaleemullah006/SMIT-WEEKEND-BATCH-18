@@ -76,26 +76,56 @@
 //     }
 
 
-let vowelsLeter = ["a", "e", "i", "o", "u"]
-let userword = prompt("Enter your Word");
+// let vowelsLeter = ["a", "e", "i", "o", "u"]
+// let userword = prompt("Enter your Word");
 
-if (!isNaN(userword)) {
-    console.log("please enter alphate, Not a Number")
-} else {
-    userword = userword.toLowerCase();
-    let count = [];
+// if (!isNaN(userword)) {
+//     console.log("please enter alphate, Not a Number")
+// } else {
+//     userword = userword.toLowerCase();
+//     let count = [];
 
-    for (let i = 0; i < userword.length; i++) {
-        if (vowelsLeter.includes(userword[i])) {
-            count.push(userword[i])
-        }
-    }
-    if (count.length === 0) {
-        console.log("No vowels Found")
-    } else {
+//     for (let i = 0; i < userword.length; i++) {
+//         if (vowelsLeter.includes(userword[i])) {
+//             count.push(userword[i])
+//         }
+//     }
+//     if (count.length === 0) {
+//         console.log("No vowels Found")
+//     } else {
 
-        console.log("vowels found", count)
-        console.log("totals vowels ", count.length)
-    }
+//         console.log("vowels found", count)
+//         console.log("totals vowels ", count.length)
+//     }
 
-}
+// }
+
+// let text = "my name is kaleem ullah & i am ;earning javascript in saylani main branch at bahadur abad";
+// let user = prompt("enter your word").toLowerCase();
+// let flag = false;
+
+// for (let i = 0 ; i<text.length; i++){
+//     if(text.slice(i, i +user.length)=== user){
+//         flag =true;
+//         break
+        
+//     }
+// }
+//     if(flag){
+//         console.log("mil gaya")
+//     }
+//     else{
+//         console.log("nahi mila")
+//     }
+// let text = "my name is kaleem ullah & i am ;earning javascript in saylani main branch at bahadur abad";
+// // let user = prompt("enter your word").toLowerCase();
+
+// for (let i = 0 ; i<text.length; i++){
+//     console.log(text.slice (i, i + 6)=== "kaleem")
+        
+        
+    
+        
+    
+// }
+   
