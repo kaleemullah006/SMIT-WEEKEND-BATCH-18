@@ -1,0 +1,167 @@
+﻿function gmod(n,m){
+	return ((n%m)+m)%m;
+}
+
+function kuwaiticalendar(adjust){
+	var today = new Date();
+	if(adjust) {
+		adjustmili = 1000*60*60*24*adjust; 
+		todaymili = today.getTime()+adjustmili;
+		today = new Date(todaymili);
+	}
+	day = today.getDate();
+	month = today.getMonth();
+	year = today.getFullYear();
+	m = month+1;
+	y = year;
+	if(m<3) {
+		y -= 1;
+		m += 12;
+	}
+
+	a = Math.floor(y/100.);
+	b = 2-a+Math.floor(a/4.);
+	if(y<1583) b = 0;
+	if(y==1582) {
+		if(m>10)  b = -10;
+		if(m==10) {
+			b = 0;
+			if(day>4) b = -10;
+		}
+	}
+
+	jd = Math.floor(365.25*(y+4716))+Math.floor(30.6001*(m+1))+day+b-1524;
+
+	b = 0;
+	if(jd>2299160){
+		a = Math.floor((jd-1867216.25)/36524.25);
+		b = 1+a-Math.floor(a/4.);
+	}
+	bb = jd+b+1524;
+	cc = Math.floor((bb-122.1)/365.25);
+	dd = Math.floor(365.25*cc);
+	ee = Math.floor((bb-dd)/30.6001);
+	day =(bb-dd)-Math.floor(30.6001*ee);
+	month = ee-1;
+	if(ee>13) {
+		cc += 1;
+		month = ee-13;
+	}
+	year = cc-4716;
+
+	if(adjust) {
+		wd = gmod(jd+1-adjust,7)+1;
+	} else {
+		wd = gmod(jd+1,7)+1;
+	}
+
+	iyear = 10631./30.;
+	epochastro = 1948084;
+	epochcivil = 1948085;
+
+	shift1 = 8.01/60.;
+	
+	z = jd-epochastro;
+	cyc = Math.floor(z/10631.);
+	z = z-10631*cyc;
+	j = Math.floor((z-shift1)/iyear);
+	iy = 30*cyc+j;
+	z = z-Math.floor(j*iyear+shift1);
+	im = Math.floor((z+28.5001)/29.5);
+	if(im==13) im = 12;
+	id = z-Math.floor(29.5001*im-29);
+
+	var myRes = new Array(8);
+
+	myRes[0] = day; //calculated day (CE)
+	myRes[1] = month-1; //calculated month (CE)
+	myRes[2] = year; //calculated year (CE)
+	myRes[3] = jd-1; //julian day number
+	myRes[4] = wd-1; //weekday number
+	myRes[5] = id; //islamic date
+	myRes[6] = im-1; //islamic month
+	myRes[7] = iy; //islamic year
+	return myRes;
+}
+function writeIslamicDate(adjustment,lang) {
+	var wdNames = new Array();
+	var iMonthNames = new Array();
+	if(lang == "en")
+	{
+		wdNames = new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+		iMonthNames = new Array("Muharram","Safar-ul-Muzaffar","Rabi-ul-Awwal","Rabi-ul-Akhir","Jamadil Awal","Jamadil Akhir","Rajab","Shaban","Ramadan","Shawwal","Zulqaidah","Zulhijjah");
+	}
+	else if(lang == "ur")
+	{
+		wdNames = new Array("اتوار","پير","منگل","بدھ","جمعرات","جمعۃ المبارک","ہفتہ");
+		iMonthNames = new Array("محرم الحرام","صفر المظفر","ربيع الأول","ربيع الثاني","جمادى الأولى","جمادى الآخر","رجب","شعبان المعظم","رمضان المبارک","شوال المکرم","ذوالقعدہ","ذوالحجہ");
+	}
+	else if(lang == "ar")
+	{
+		wdNames = new Array("الأحد","الإثنين","الثُّلَاثاء","الأَرْبعاء","الخَمِيس","الجُمْعَة","السَّبْت");
+		iMonthNames = new Array("محرم الحرام","صفر المظفر","ربیع الاول","ربیع الآخر","جمادی الاول","جمادی الآخر","رجب المرجب","شعبان المعظم","رمضان المبارك","شوال المكرم","ذو القعدة","ذو الحجة");
+	}
+	else
+	{
+		wdNames = new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+		iMonthNames = new Array("Muharram-ul-Haram","Safar-ul-Muzaffar","Rabi-ul-Awwal","Rabi-us-Sani","Jumad-al-Awwal","Jumad-as-Sani","Rajab-ul-Murajjab","Shaban-ul-Muazzam","Ramadan-ul-Mubarak","Shawwal-ul-Mukarram","Zeeqada-tul-Haram","Zulhijja-tul-Haram");
+	}
+	var iDate = kuwaiticalendar(adjustment);
+	var outputIslamicDate = "";
+	
+	if(lang == "en")
+	{outputIslamicDate =  iDate[5] + " " + iMonthNames[iDate[6]] + " " + iDate[7] + " Hijri";}
+	else if(lang == "ur")
+	{outputIslamicDate = + iDate[5] + " " + iMonthNames[iDate[6]] + " " + iDate[7] + " ہجری";}
+	else if(lang == "ar")
+	{outputIslamicDate = wdNames[iDate[4]] + " , " + iDate[5] + " " + iMonthNames[iDate[6]] + " " + iDate[7] + " ہجری";}
+	else
+	{outputIslamicDate = wdNames[iDate[4]] + " , " + iDate[5] + " " + iMonthNames[iDate[6]] + " " + iDate[7] + " Hijri";}
+	
+	return outputIslamicDate;
+}
+//wdNames[iDate[4]] + " , " 
+
+
+function islamicDate(adjustment) {
+	var iDate = kuwaiticalendar(adjustment);
+	var islamicDateFormat = iDate[5]+'-'+iDate[6]+'-'+iDate[7];
+	return islamicDateFormat;
+}
+function islamicDay(adjustment) {
+	var iDate = kuwaiticalendar(adjustment);
+	var r_IslamicDay = iDate[5];
+	return r_IslamicDay;
+}
+function islamicMonth(adjustment) {
+	var iDate = kuwaiticalendar(adjustment);
+	var r_IslamicMonth = iDate[6];
+	return r_IslamicMonth;
+}
+function islamicYear(adjustment) {
+	var iDate = kuwaiticalendar(adjustment);
+	var r_IslamicYear = iDate[7];
+	return r_IslamicYear;
+}
+
+
+function GetClock(){
+var d=new Date();
+var nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
+var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
+
+if(nhour==0){ap=" AM";nhour=12;}
+else if(nhour<12){ap=" AM";}
+else if(nhour==12){ap=" PM";}
+else if(nhour>12){ap=" PM";nhour-=12;}
+
+if(nmin<=9) nmin="0"+nmin;
+if(nsec<=9) nsec="0"+nsec;
+
+document.getElementById('clockbox').innerHTML=""+ndate+"/"+(nmonth+1)+"/"+nyear+" "+nhour+":"+nmin+":"+nsec+ap+"";
+}
+
+window.onload=function(){
+GetClock();
+setInterval(GetClock,1000);
+}
