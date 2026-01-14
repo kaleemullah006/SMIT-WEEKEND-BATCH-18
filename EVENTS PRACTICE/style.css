@@ -1,0 +1,24 @@
+/* body {
+  transition: background-color 0.5s, color 0.5s;
+}
+
+h1 {
+  transition: color 0.5s;
+}
+
+.light-theme {
+  background-color: antiquewhite;
+  color: black;
+}
+
+.dark-theme {
+  background-color: rgb(50, 50, 50);
+  color: white;
+}  */
+
+.blue{
+    color: blue;
+}
+.red{
+    color: red;
+}
