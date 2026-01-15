@@ -40,31 +40,31 @@
 //     }
 // })
 
-let btn = document.getElementById("greetBtn");
+// let btn = document.getElementById("greetBtn");
 
-btn.addEventListener("click", function () {
+// btn.addEventListener("click", function () {
 
-    let message = document.getElementById("message");
+//     let message = document.getElementById("message");
 
-    let nameInput = document.getElementById("nameInput")
+//     let nameInput = document.getElementById("nameInput")
 
-    name = nameInput.value
+//     name = nameInput.value
 
-    if (name === "") {
-        message.innerText = "Please Enter Your Name"
+//     if (name === "") {
+//         message.innerText = "Please Enter Your Name"
 
-        message.style.color = "red"
+//         message.style.color = "red"
 
-        btn.style.color = "red"
+//         btn.style.color = "red"
 
-        btn.innerText = "🔥🔥"
+//         btn.innerText = "🔥🔥"
 
-    } else {
-        message.innerText = "Hello " + name + "  kesi ho ? 💕"
+//     } else {
+//         message.innerText = "Hello " + name + "  kesi ho ? 💕"
 
-        message.style.color = "green"
+//         message.style.color = "green"
 
 
-        nameInput.value = ""
-    }
-})
+//         nameInput.value = ""
+//     }
+// })
