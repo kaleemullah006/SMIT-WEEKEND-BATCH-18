@@ -1,0 +1,59 @@
+/* .hide{
+    display: none;
+}
+.show{
+    display: show;
+} */
+/* #box{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid green;
+} */
+/* .red {
+     background: red;
+     width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid green
+
+}
+.green {
+     background: green;
+     width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid green 
+    } */
+/* body{
+    background-color: black;
+}
+.off {
+    background: black;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid rgb(243, 246, 243) 
+}
+
+.on {
+
+    background: yellow;
+    box-shadow: 0 0 30px yellow;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid green 
+} */
+     
+#btn {
+    margin-top: 30px;
+    margin-left: 15px;
+}
+
+.hide{
+    display: none;
+}
+.show{
+    display: show;
+} 
