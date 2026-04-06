@@ -101,16 +101,16 @@
 
 // console.log(arr3)
 
-let map = new Map()
+// let map = new Map()
 
-map.set("name", "Haniya")
-map.set(1,"number")
-map.set(true,"yes")
+// map.set("name", "Haniya")
+// map.set(1,"number")
+// map.set(true,"yes")
  
-for(let [i,h] of map){
+// for(let [i,h] of map){
 
-    console.log(i,h)
-}
+//     console.log(i,h)
+// }
 
 
 
