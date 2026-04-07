@@ -55,3 +55,73 @@
 // console.log(newArr.next())
 
 
+// let cities = ["karachi", "peshawar", "lahore", "islamabad"]
+
+// // for (let city of cities){
+// //     console.log(city)
+// // }
+
+// let city = cities[Symbol.iterator]()
+
+// console.log(city.next())
+// console.log(city.next())
+// console.log(city.next())
+// console.log(city.next())
+// console.log(city.next())
+
+
+// let cities = ["karachi", "peshawar", "lahore", "islamabad"]
+
+// for (let city of cities){
+//     console.log(city)
+// }
+
+
+// let number = {
+//     start: 5,
+//     end: 7,
+//     [Symbol.iterator](){
+//         let current = this.start;
+//         let last = this.end;
+
+
+//         return{
+//             next(){
+//                 if (current <= last) {
+//                     return {value: current++ , done:false}
+//                 } else {
+//                     return {done:true}
+//                 }
+//             }
+//         }
+
+//     }
+// }
+
+// for(let num of number){
+//     console.log(num)
+// }
+
+let number = {
+    start:12 ,
+    end: 16,
+
+    [Symbol.iterator](){
+        let current = this.start
+        let last  = this.end
+
+        return{
+            next(){
+                if (current <= last) {
+                    return {value: current++ , done:false}
+                } else {
+                    return{done:true}
+                }
+            }
+        }
+    }
+}
+
+for(let num of number){
+    console.log(num)
+}
