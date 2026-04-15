@@ -1,4 +1,4 @@
-"use strict";
+// "use strict";
 // let Name: string = "kaleem";
 // let Age: number = 20;
 // let isStudent: boolean = true;
@@ -22,5 +22,4 @@
 //     year: 2024
 // }
 // console.log(car.brand)
-let id = true;
-console.log(id);
+
