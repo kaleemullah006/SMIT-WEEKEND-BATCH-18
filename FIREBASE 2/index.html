@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input id="email" type="email" placeholder="email" />
+
+    <input
+      id="password"
+      type="password"
+      name="password"
+      placeholder="password"
+    />
+
+    <button id="signup_btn">Signup</button>
+    <button id="signin_btn">Signin</button>
+    <button id="signout_btn">Signout</button>
+    <div id="output"></div>
+    
+    <input id="name" placeholder="Enter Name" />
+    <input id="class" placeholder="Enter Class" />
+    <input id="age" placeholder="Enter Age" />
+    
+    <button onclick="addStudent()">Add Student</button>
+
+
+    <div id="output2"></div>
+    <button onclick="updateStudent()">Update Student</button>
+    <button onclick="getStudents()">Show Student</button>
+
+
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+
+    <script src="app.js"></script>
+  </body>
+</html>
