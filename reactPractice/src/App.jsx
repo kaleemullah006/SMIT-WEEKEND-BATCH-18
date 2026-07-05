@@ -22,6 +22,12 @@ import Card from "../UseEffect/Card";
 import UseEffectExcercise from "../UseEffect/UseEffectExcercise";
 import RHF from "./component/ReactHookForm/RHF";
 import RegistrationForm from "./component/ReactHookForm/Zod/Zod";
+import Signup from "./component/supabase/Signup";
+import Login from "./component/supabase/Login";
+import Dashboard2 from "./component/supabase/SignupDashboard";
+import Signupexe from "./component/supabase/excercise/signupexe";
+import Dashboardexe from "./component/supabase/excercise/dashboardexe";
+import Signinexe from "./component/supabase/excercise/signinexe";
 
 function App() {
   return (
@@ -47,6 +53,12 @@ function App() {
       <Route path="/UseEffectExcercise" element={<UseEffectExcercise />} />
       <Route path="/rhf" element={<RHF />} />
       <Route path="/RegistrationForm" element={<RegistrationForm />} />
+      <Route path="/signup" element={<Signup />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/dashboard2" element={<Dashboard2 />} />
+      <Route path="/signupexe" element={<Signupexe />} />
+      <Route path="/signinexe" element={<Signinexe />} />
+      <Route path="/dashboardexe" element={<Dashboardexe />} />
     </Routes>
   );
 }
