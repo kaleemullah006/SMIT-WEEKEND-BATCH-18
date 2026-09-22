@@ -84,20 +84,28 @@
 const express = require("express")
 const cors = require("cors")
 
+const authRoutes = require("./routers/authRoutes")
+
+
 const productRouters = require("./routers/productRouters")
+const loggerMiddlewhare = require("./middleware/loggerMiddlewhare")
 
 const app = express()
-
-app.use(cors())
 app.use(express.json())
 
+app.use(loggerMiddlewhare)
+
+app.use(cors())
+// app.use(json.parser())
+app.use("/auth", authRoutes)
+
 app.use((req,res,next)=>{
-console.log(req.method)  
-  console.log(req.url)
+// console.log(req.method)  
+//   console.log(req.url)
     next()
 })
 
-app.use("/api/products", productRouters)
+// app.use("/api/products", productRouters)
 app.use("/api", productRouters)
 
 app.listen(5000, ()=>{
