@@ -93,7 +93,7 @@ const loggerMiddlewhare = require("./middleware/loggerMiddlewhare")
 const app = express()
 app.use(express.json())
 
-app.use(loggerMiddlewhare)
+// app.use(loggerMiddlewhare)
 
 app.use(cors())
 // app.use(json.parser())
