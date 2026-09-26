@@ -5,33 +5,13 @@ const fs = require("fs")
 const bcrypt = require("bcrypt")
 
 const jwt = require("jsonwebtoken")
+const signupController = require("../controller/authController")
 const authMiddleware = require("../middleware/authMiddleware")
-
 const router = express.Router()
 
 
+router.post("/signup",signupController)
 
-router.post("/signup", async (req,res)=>{
-    const {email, password} = req.body
-
-    const hashedPassword = await bcrypt.hash(password,10)
-    const user = {email, password:hashedPassword}
-    
-    const fileData = fs.readFileSync("user.json", "utf-8")
-    
-    const users = JSON.parse(fileData)
-    users.push(user)
-
-
-    fs.writeFileSync("user.json", JSON.stringify(users))
-
-    console.log(user)
-
-    res.status(201).json({
-        message: "user created successfully",
-         email
-    })
-})
 
 router.post("/login", async (req,res)=>{
     const {email, password} = req.body
